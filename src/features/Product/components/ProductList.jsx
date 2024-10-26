@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, selectCount } from "./ProductListSlice";
+import { increment, selectCount } from "../ProductListSlice";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import {
   Dialog,

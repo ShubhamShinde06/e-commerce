@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, incrementAsync, selectCount } from "../authSlice";
 import { Link } from "react-router-dom";
+import NavBar from "../../navBar/NavBar";
 
 export default function Signup() {
   const count = useSelector(selectCount);
@@ -9,6 +10,7 @@ export default function Signup() {
 
   return (
     <div>
+    <NavBar/>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img

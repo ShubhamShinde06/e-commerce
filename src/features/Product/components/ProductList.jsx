@@ -22,6 +22,7 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -83,7 +84,7 @@ const products = [
   {
     id: 1,
     name: "Basic Tee",
-    href: "#",
+    href: "/product-details",
     imageSrc:
       "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -93,7 +94,7 @@ const products = [
   {
     id: 2,
     name: "Basic Tee",
-    href: "#",
+    href: "/product-details",
     imageSrc:
       "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -103,7 +104,7 @@ const products = [
   {
     id: 3,
     name: "Basic Tee",
-    href: "#",
+    href: "/product-details",
     imageSrc:
       "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -113,7 +114,7 @@ const products = [
   {
     id: 4,
     name: "Basic Tee",
-    href: "#",
+    href: "/product-details",
     imageSrc:
       "https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
@@ -378,13 +379,13 @@ export default function Counter() {
                             <div className="mt-4 flex justify-between">
                               <div>
                                 <h3 className="text-sm text-gray-700">
-                                  <a href={product.href}>
+                                  <Link to={product.href}>
                                     <span
                                       aria-hidden="true"
                                       className="absolute inset-0"
                                     />
                                     {product.name}
-                                  </a>
+                                  </Link>
                                 </h3>
                                 <p className="mt-1 text-sm text-gray-500">
                                   {product.color}
